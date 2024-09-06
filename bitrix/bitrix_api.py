@@ -4,9 +4,9 @@ import aiohttp
 
 from core.secrets import BitrixSecrets
 from database.database import Database
+"""методы взаимодействия с сервисом Bitrix через HTTP-запросы"""
 
-
-class BitrixMethods():
+class BitrixMethods():#Класс взаимодействия с API Bitrix
     def __init__(self, department_sign: Union[int, str]) -> None:
         self.db = Database()
         self.dep = department_sign
